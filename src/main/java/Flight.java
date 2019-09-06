@@ -70,4 +70,14 @@ public class Flight {
     public int getNumberOfPassengers() {
        return this.passengers.size();
     }
+
+    public void addPassenger(Passenger passenger) {
+       if (getNumberOfPassengers() < this.plane.getCapacity()) {
+            this.passengers.add(passenger);
+        }
+    }
+
+    public int availableSeats() {
+       return this.plane.getCapacity() - getNumberOfPassengers();
+    }
 }

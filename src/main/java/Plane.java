@@ -1,6 +1,7 @@
 public enum Plane {
 
     AIRBUSA220(30, 350),
+    AIRBUSA120(2, 350),
     AIRBUSA330(20, 300),
     BOEING747(40, 350),
     BOEING737(30, 450);
